@@ -1,5 +1,5 @@
 import React from 'react'
-import './link.css'
+import './sidebar.css'
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import FolderSharedOutlinedIcon from '@mui/icons-material/FolderSharedOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
@@ -11,12 +11,14 @@ import HealthAndSafetyOutlinedIcon from '@mui/icons-material/HealthAndSafetyOutl
 import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import { Link } from 'react-router-dom'
 
-export default function Link() {
+export default function Links() {
   return (
     <div className='link'>
-      <a href="http://google.com"><div> <FolderSharedOutlinedIcon /> Patients</div></a>
-      <a href="http://google.com"><div> <DashboardOutlinedIcon /> Dashboard</div></a>
+      
+      <Link to="http://google.com"><div> <DashboardOutlinedIcon /> Dashboard</div></Link>
+      <Link to={'/accesspatients'}><div> <FolderSharedOutlinedIcon /> Patients</div></Link>
       <a href="http://google.com"><div> <CalendarMonthOutlinedIcon />Appointments</div></a>
       <a href="http://google.com"><div> <LayersOutlinedIcon />Records</div></a>
       <a href="http://google.com"><div> <OutlinedFlagIcon />Access Control</div></a>
