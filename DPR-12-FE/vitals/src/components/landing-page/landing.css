@@ -1,0 +1,551 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .nav-bar {
+    position: relative;
+    display: flex;
+    background: white;
+    padding: 20px;
+    height: 40px;
+  }
+  
+  .nav-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 100%; 
+    background: linear-gradient(to right, rgba(25, 118, 210, 0.2), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  
+  .logo {
+    width: 15%;
+    
+  }
+  
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+  }
+  
+  .menus a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  /*block1 designs*/
+  
+  .block1 {
+    position:relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    display: flex;
+    /*background-color: #c3d8f4;
+    background: rgba(25, 118, 210, 0.2);*/
+    background: white;
+  }
+  
+  .block1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 100%; 
+    background: linear-gradient(to right, rgba(25, 118, 210, 0.2), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  
+  .rt1 {
+    width: 55%;
+  }
+  
+  .title {
+    font-size: 35px;
+    line-height: 45px;
+    font-family: lato;
+    color: #1e88e5;
+    margin-top: 70px;
+  }
+  
+  .content {
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 1.7rem;
+  }
+  
+  .btn1 {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    border: 1px solid #1565C0;
+    background: #1565C0;
+    width: 130px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /*block2 designs*/
+  .block2 {
+    border: white 1px solid;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  
+  .title2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-size: 25px;
+  }
+  
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  
+  .grids {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grid {
+    width: 25%;
+  }
+  
+  .gimg {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gtit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .gtit h4 {
+    font-weight: bold;
+  }
+  
+  .gcont h5 {
+    font-weight: 300;
+  }
+  
+  .gcont {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+  }
+  
+  .gcont h5 {
+    font-weight: 600;
+  }
+  
+  /*block3 designs*/
+  .block3 {
+    border: 1px #E3F2FD solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #E3F2FD;
+  
+  }
+  
+  .mid {
+    display: flex;
+  }
+  
+  .rt3 {
+    width: 80%;
+  }
+  
+  .title3 {
+    margin-top: 35px;
+    font-size: 27px;
+  }
+  
+  .subtitle3 {
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 1.7rem;
+    margin-bottom: 35px;
+    font-size: 17px;
+  }
+  
+  .btn3 {
+    margin-top: 75px;
+    border: #1565C0 solid 1px;
+    background: #1565C0;
+    width: 17vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .btn3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /*block4 designs*/
+  .block4 {
+    background-image: url("src/components/pic7.png");
+    height: 90vh;
+    background-size: 100% 600px;
+    padding-left: 30px;
+    position: relative;
+    
+  }
+  
+  .block4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%; 
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+  
+  .rt4 {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    
+  }
+  
+  .rt4 img,
+  .rt4 h4 {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .pic {
+      padding-top: 85px;
+  }
+  
+  .content4 {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.7rem;
+    margin-bottom: 35px;
+    font-size: 18.5px;
+  }
+  
+  .pic2{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    
+  }
+  
+  /*block5 designs*/
+  .block5 {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid white 1px;
+  
+  }
+  
+  .content5 {
+    text-align: center;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 25px;
+    font-size: 18.5px;
+    line-height: 1.7rem;
+  }
+  
+   h4 {
+    font-weight: 500;
+  }
+  
+  .grid5 {
+    margin-top: 45px;
+  }
+  
+  .testifiers {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pict {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 1;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    z-index: 1;
+  }
+  
+  .image {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .namet {
+    text-align: center;
+  }
+  
+  .texts {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
+  
+  /*Block6 Design.....*/
+  .block6 {
+    padding-left: 30px;
+    background: #E3F2FD;
+    border: 1px solid #E3F2FD;
+  }
+  
+  .bottom {
+    display: flex;
+  }
+  
+  
+  .question-lists {
+      /*max-width: 700px;
+      margin: auto;*/
+      margin-top: 40px;
+      margin-bottom: 80px;
+      width: 80vw;
+      margin-left: 100px;
+    
+  
+  }
+  
+  details {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .d1 {
+    margin-bottom: 10px;
+  }
+  summary {
+      padding: .9em 1.5rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      transition: height 1s ease;
+  
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary:after {
+    content: "\002B";
+  }
+  
+  details[open] summary {
+    /*border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;*/
+    color: #1971C2;
+  }
+  
+  details[open] summary:after{
+      content: "\00D7";
+  }
+  
+  details[open] div{
+      padding: .5em 1em;
+  }
+  
+  .lt6 {
+    margin-top: 215px;
+    margin-left: 1rem;
+  }
+  
+  /*Block7 designs......*/
+  .block7 {
+    border: 1px solid white;
+    padding: 50px;
+  }
+  
+  .inner {
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid orange;
+  }
+  
+  .blue {
+    color: #1565C0;
+    padding-left: 5px;
+  }
+  
+  .btn7 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-7 {
+    width: 13vw;
+    border: #1565C0 solid 1px;
+    background-color: #1565C0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  
+  }
+  
+  .btn-7 a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  /*footer design......*/
+  
+  .footer {
+    color: white;
+    padding-left: 30px;
+    background: black;
+    padding-right: 30px;
+  }
+  
+  .fblocks {
+    display: flex;
+    
+  }
+  
+  .fblock1 {
+    margin-top: 35px;
+    width: 40%;
+  }
+  
+  .socials {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-title {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .form {
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  .form .input1 input {
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    width: 18vw;
+    border: none;
+  }
+  
+  .form .input1 input::placeholder {
+    padding-left: 7px;
+  }
+  
+  .form .input2 input {
+    height: 35px;
+    border-radius: 0px 5px 5px 0px;
+    width: 9vw;
+    border: none;
+    background-color: #1565C0;
+  }
+  
+  .other-blocks {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+    width: 60%;
+    
+  }
+  
+  .fblock2 {
+    margin-left: 4rem; 
+  }
+  
+  .ftitle {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .fcontents {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .fcontents ul li {
+    margin-bottom: 10px;
+  }
+  
+  .copy-right {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
