@@ -10,20 +10,20 @@ export default function Hero() {
   return (
     <div className='hero-section'>
       <div className='hero-details'>
-        <div className='hero-text'>
-            <h1 className='hero-header'>Revolutionalizing Healthcare Medical Record Efficiency.</h1>
-            <p>Providing our users with a system that helps manage medical records and automate clinical workflow with optimal security measures.</p>
-            <button className='nav-btn'>LEARN MORE</button>
-            <p>Download the <span>Vitals</span> app</p>
-            <div className='hero-apps'>
-                <Link><img className='app-store' src={appstore} alt='' /></Link>
-                <Link><img className='play-store' src={playstore} alt='' /></Link>
+            <div className='hero-text'>
+                <h1 className='hero-header'>Revolutionalizing Healthcare Medical Record Efficiency.</h1>
+                <p>Providing our users with a system that helps manage medical records and automate clinical workflow with optimal security measures.</p>
+                <button className='nav-btn'>LEARN MORE</button>
+                <p>Download the <span>Vitals</span> app</p>
+                <div className='hero-apps'>
+                    <Link><img className='app-store' src={appstore} alt='' /></Link>
+                    <Link><img className='play-store' src={playstore} alt='' /></Link>
+                </div>
             </div>
-        </div>
-        <div className='hero-img'>
-            <img className='hero-doctor' src={heroImg} alt='' />
-            <img className='hero-fade' src={fade} alt='' />
-        </div>
+            <div className='hero-img'>
+                <img className='hero-doctor' src={heroImg} alt='' />
+                <img className='hero-fade' src={fade} alt='' />
+            </div>
       </div>
 
     </div>

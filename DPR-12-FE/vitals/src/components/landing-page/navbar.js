@@ -19,7 +19,7 @@ export default function Navbar() {
                 </ul>
             </div>
 
-            <button className='nav-btn'>LOGIN/REGISTER</button>
+            <Link to={'/register'} className='nav-btn'>LOGIN/REGISTER</Link>
             
         </nav>
     </>
