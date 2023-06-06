@@ -17,9 +17,9 @@ export default function Links() {
   return (
     <div className='link'>
       
-      <Link to="http://google.com"><div> <DashboardOutlinedIcon /> Dashboard</div></Link>
+      <Link to={'/patientdashboard'}><div> <DashboardOutlinedIcon /> Dashboard</div></Link>
       <Link to={'/accesspatients'}><div> <FolderSharedOutlinedIcon /> Patients</div></Link>
-      <a href="http://google.com"><div> <CalendarMonthOutlinedIcon />Appointments</div></a>
+      <Link to={'/patientappointments'}><div> <CalendarMonthOutlinedIcon />Appointments</div></Link>
       <a href="http://google.com"><div> <LayersOutlinedIcon />Records</div></a>
       <a href="http://google.com"><div> <OutlinedFlagIcon />Access Control</div></a>
       <a href="http://google.com"><div> <AnalyticsOutlinedIcon />Analytics</div></a>

@@ -6,6 +6,13 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 
 
 export default function Right() {
+
+    const handleFormSubmit=(event) => {
+        event.preventDefault();
+    }
+
+
+
   return (
     <div className='right'>
       <div className='right-container'>
@@ -16,35 +23,25 @@ export default function Right() {
             </div>
 
             <div className='right-form'>
-                <form>
+            <form>
                     <div className='form-inputs'>
-                        {/* <div className='name-inputs'>
-                            <div className='rightform-inputs'>
-                                <p>Surname</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g Jermie' name='surname' /></div>
-                            </div>
-                            <div className='rightform-inputs'>
-                                <p>First Name</p>
-                                <div className='small-input'><input className='small-inputs' type="text" placeholder='e.g Jermie' name='firstname' /><span> </span></div>
-                            </div>
-                        </div> */}
                         <div className='right-large-inputs'>
                             <div className='rightform-inputs'>
                                 <p>Hospital Name</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g  University Teaching Hospital  Enugu State' /></div>
+                                <div className='large-input'><input className='large-inputs' type="text" name='hospital-name' placeholder='e.g  University Teaching Hospital  Enugu State' /></div>
                             </div>
                             <div className='rightform-inputs'>
                                 <p>Hospital Address</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g University Teaching Hospital, Ituku-Ozalla, Enugu Nigeria' /></div>
+                                <div className='large-input'><input className='large-inputs' type="text" name='hospital-address' placeholder='e.g University Teaching Hospital, Ituku-Ozalla, Enugu Nigeria' /></div>
                             </div>
                             <div className='rightform-inputs'>
                                 <p>Email address</p>
-                                <div className='large-input'><input className='large-inputs' type="email" placeholder='name@example.com' /></div>
+                                <div className='large-input'><input className='large-inputs' type="email" placeholder='name@example.com' name='email'/></div>
                             </div>
                             
                             <div className='rightform-inputs'>
-                                <p>Specialty</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g Dentist' /></div>
+                                <p>Registration Number</p>
+                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g 50339AD' name='registration-number' /></div>
                             </div>
                         </div>
                         <div className='password-inputs'>
@@ -63,7 +60,7 @@ export default function Right() {
                         <p>I accept all <span>Terms and Conditions</span></p>
                     </div>
                     <div className='form-submit'>
-                        <button type='submit'>CREATE ACCOUNT</button>
+                        <button type='submit' onClick={handleFormSubmit}>CREATE ACCOUNT</button>
                     </div>
                 </form>
 

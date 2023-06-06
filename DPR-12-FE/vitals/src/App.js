@@ -1,6 +1,6 @@
 
 import './App.css'
-import Dashboard from './components/patient-pages/Dashboard'
+import Dashboard from './components/patient-pages/Dashboard/Dashboard'
 import { Route, Routes } from 'react-router-dom';
 import AccessPatients from './components/patient-pages/AccessPatients/AccessPatients';
 import Landing from './components/landing-page/landing';
@@ -12,6 +12,9 @@ import DoctorRegister from './components/register/doctor-register/doctorregister
 import PatientRegister from './components/register/patient-register/patientregister'
 import HospitalRegister from './components/register/hospital-register/hospitalregister';
 import HospitalLogin from './components/login/hospital-login/hospitallogin';
+import AccessPatientRecords from './components/doctors-pages/AccessPatientRecord/AccessPatientRecords';
+import DrDashboard from './components/doctors-pages/Dashboard/Dashboard';
+import Appointments from './components/patient-pages/Appointments/Appointments';
 
 
 
@@ -25,7 +28,8 @@ function App() {
         <Routes>
 
           <Route path='/' element= {<Landing />} />
-          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/patientdashboard' element={<Dashboard />} />
+          <Route path='/patientappointments' element={<Appointments />} />
           <Route path='/accesspatients' element= {<AccessPatients />} />
           <Route path='/register' element={<Home />} />
           <Route path='/login' element={<Login />} />
@@ -40,6 +44,8 @@ function App() {
           <Routes>
           <Route path='/doctor-login' element={<DoctorLogin />} />
           <Route path='/doctor-register' element={<DoctorRegister />} />
+          <Route path='/patientrecords' element={<AccessPatientRecords />} />
+          <Route path='/doctordashboard' element={<DrDashboard />} />
             
           </Routes>
 

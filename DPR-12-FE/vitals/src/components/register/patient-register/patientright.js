@@ -1,11 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
+import SignupFormSuccess from '../SignupFormSuccess'
 import { Link } from 'react-router-dom'
 import logo from '../../../images/VitalsLogoBlue.svg'
-import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import './patientregister.css'
+import PatientRegForm from './PatientRegForm';
 
 
-export default function Right() {
+export default function Right(firstName, lastName, email, phoneNumber, password, confirm_password) {
+     
+    const[formIsSubmitted, setFormIsSubmitted] = useState(false);
+
+    const submitForm = () => {
+      console.log(firstName, lastName, email, phoneNumber, password, confirm_password)
+      setFormIsSubmitted(true);
+    }
+
   return (
     <div className='right'>
       <div className='right-container'>
@@ -16,45 +25,9 @@ export default function Right() {
             </div>
 
             <div className='right-form'>
-                <form>
-                    <div className='form-inputs'>
-                        <div className='name-inputs'>
-                            <div className='rightform-inputs'>
-                                <p>Surname</p>
-                                <div className='small-input'><input className='small-inputs' type="text" placeholder='e.g Jermie' name='surname' /><span> </span></div>
-                            </div>
-                            <div className='rightform-inputs'>
-                                <p>First Name</p>
-                                <div className='small-input'><input className='small-inputs' type="text" placeholder='e.g Jermie' name='firstname' /><span> </span></div>
-                            </div>
-                        </div>
-                        <div className='right-large-inputs'>
-                            <div className='rightform-inputs'>
-                                <p>Email address</p>
-                                <div className='large-input'><input className='large-inputs' type="email" placeholder='name@example.com' /></div>
-                            </div>
-                            
-                        </div>
-                        <div className='password-inputs'>
-                            <div className='rightform-inputs'>
-                                <p>Password</p>
-                                <div className='pass-inputs'><input type="password" placeholder='xxxxxxx' name='password' /> <VisibilityOffOutlinedIcon className='pass-icons' /></div>
-                            </div>
-                            <div className='rightform-inputs'>
-                                <p>Confirm Password</p>
-                                <div className='pass-inputs'><input type="password" placeholder='xxxxxxx' name='confirmpassword' /><VisibilityOffOutlinedIcon className='pass-icons' /></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='form-terms'>
-                        <input type='checkbox' name='agree' value='agree' />
-                        <p>I accept all <span>Terms and Conditions</span></p>
-                    </div>
-                    <div className='form-submit'>
-                        <button type='submit'>CREATE ACCOUNT</button>
-                    </div>
-                </form>
-
+                {!formIsSubmitted ? 
+                <PatientRegForm submitForm={submitForm} /> 
+                : <SignupFormSuccess />}
             </div>
 
             <Link to={'/login'} className='back-to-login'>Already have an account?<span> Login</span></Link>

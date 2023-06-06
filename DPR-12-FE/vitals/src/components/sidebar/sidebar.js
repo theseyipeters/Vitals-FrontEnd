@@ -1,6 +1,5 @@
 import React from 'react'
-
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 import Links from './links.js'
 import logo from '../../images/VitalsLogo.svg'
@@ -10,14 +9,26 @@ import './sidebar.css'
 
 
 export default function Sidebar() {
+
+    const navigate = useNavigate();
+
+    let token= localStorage.getItem('user-info')
+
+    function Logout(){
+        localStorage.removeItem('user-info');
+        // window.location.reload()
+        navigate("/patient-login");
+    }
+
+
   return (
     <div className='sidebar'>
       <Link to="/" ><img src={logo} alt='logo' /> </Link>
 
-      <div className='container'>    
+      <div className='side-container'>    
             <form  className='searchbar'>
-                <input type="text" />
-                <button type='submit'>Search</button>
+                <input type="text" placeholder='Search' />
+                {/* <button type='submit'>Search</button> */}
             </form>
       </div> 
 
@@ -30,7 +41,7 @@ export default function Sidebar() {
                 <p className='name'>Sarah</p>
                 <p className='email'>omaasa@team12.com</p>
             </div>
-            <button><LogoutOutlinedIcon /></button>
+            <button onClick={Logout()}><LogoutOutlinedIcon /></button>
         </div>
       </div>
 

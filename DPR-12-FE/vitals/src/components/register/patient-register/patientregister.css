@@ -151,10 +151,13 @@
 .large-input input::placeholder{
     font-size: 14px;
     color: #777777;
+
 }
+
 .small-inputs input{
     border: 1px solid #777777;
     outline: none;
+    
 }
 
 
@@ -230,4 +233,12 @@
 .back-to-login span{
     color: #1976D2;
     font-size: 14px;
+}
+
+.error-text{
+    color: #E65100;
+    font-size: 14px !important;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 20px;
 }

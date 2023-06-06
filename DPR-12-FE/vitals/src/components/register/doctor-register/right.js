@@ -5,6 +5,16 @@ import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined
 
 
 export default function Right() {
+
+    const handleFormSubmit=(event) => {
+        event.preventDefault();
+    }
+
+
+
+
+
+
   return (
     <div className='right'>
       <div className='right-container'>
@@ -30,15 +40,15 @@ export default function Right() {
                         <div className='right-large-inputs'>
                             <div className='rightform-inputs'>
                                 <p>Email address</p>
-                                <div className='large-input'><input className='large-inputs' type="email" placeholder='name@example.com' /></div>
+                                <div className='large-input'><input className='large-inputs' type="email" placeholder='name@example.com' name='email'/></div>
                             </div>
                             <div className='rightform-inputs'>
                                 <p>License Number</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g 5011DA3' /></div>
+                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g 5011DA3' name='license-number' /></div>
                             </div>
                             <div className='rightform-inputs'>
                                 <p>Specialty</p>
-                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g Dentist' /></div>
+                                <div className='large-input'><input className='large-inputs' type="text" placeholder='e.g Dentist' name='specialty' /></div>
                             </div>
                         </div>
                         <div className='password-inputs'>
@@ -57,7 +67,7 @@ export default function Right() {
                         <p>I accept all <span>Terms and Conditions</span></p>
                     </div>
                     <div className='form-submit'>
-                        <button type='submit'>CREATE ACCOUNT</button>
+                        <button type='submit' onClick={handleFormSubmit}>CREATE ACCOUNT</button>
                     </div>
                 </form>
 

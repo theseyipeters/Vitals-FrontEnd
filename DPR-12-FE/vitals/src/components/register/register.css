@@ -40,6 +40,7 @@
 }
 .body-box-container{
     display: flex;
+    width: fit-content;
     gap: 40px;
 }
 .body-box{
@@ -73,19 +74,50 @@
 
 .login{
     text-decoration: none;
-    color: #121212;
+    color: #fff !important;
     font-weight: 300;
     cursor: pointer;
 
 }
 .login:hover{
-    text-decoration: underline solid #121212 10%;
-    color: #121212;
+    color: #121212 !important;
     font-weight: 300;
     cursor: pointer;
 
 }
 .login span{
-    color: #1976D2;
+    color: #fff !important;
     font-weight: 400;
+}
+.success-wrapper{
+    width: 100%;
+}
+.success-container{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 120px 100px;
+    height: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.success{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.check-icon{
+    width: 70px;   
+}
+.success-text{
+    font-size: 16px;
+    font-weight: 300;
+}
+.success-wrapper button{
+    margin-top: 50px;
+    width: 100%;
 }

@@ -29,7 +29,7 @@ export default function Body() {
 
             </div>
 
-            <Link to={'/register'} className='login'>Don't have an account? <span>Register</span></Link>
+            <button className='nav-btn'><Link to={'/register'} className='login'>Don't have an account? <span>Register</span></Link></button>
 
         </div>
     </div>

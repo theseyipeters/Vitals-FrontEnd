@@ -16,8 +16,8 @@ export default function Hero() {
                 <button className='nav-btn'>LEARN MORE</button>
                 <p>Download the <span>Vitals</span> app</p>
                 <div className='hero-apps'>
-                    <Link><img className='app-store' src={appstore} alt='' /></Link>
-                    <Link><img className='play-store' src={playstore} alt='' /></Link>
+                    <Link to={'https://www.apple.com/store'}><img className='app-store' src={appstore} alt='' /></Link>
+                    <Link to={'https://play.google.com'}><img className='play-store' src={playstore} alt='' /></Link>
                 </div>
             </div>
             <div className='hero-img'>

@@ -6,11 +6,13 @@
 }
 
 .landing-container{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: fit-content;
     background: linear-gradient(258.96deg, #FFFFFF 0%, rgba(217, 255, 255, 0.6) 100%);
 }
+
+
 .navbar{
     display: flex;
     align-items: center;
@@ -37,7 +39,7 @@
     text-decoration: none;
     list-style: none;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     color: #121212;
 }
 
@@ -73,34 +75,36 @@
 
 .hero-section{
     width: 100%;
+    position: relative;
     height: fit-content;
-    padding: 65px 125px;
+    padding: 75px 125px;
 }
 
 .hero-details{
-    
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: space-between !important;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 .hero-text{
-    margin-top: 40px;
-    width: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    /* width: auto; */
 }
 .hero-text h1{
     font-size: 45px;
     color: #1E88E5;
-    width: 600px;
+    max-width: 600px;
     line-height: 60px;
 }
 .hero-text p{
-    margin-top: 30px;
     line-height: 30px;
     width: 500px;
     color: #121212;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 .hero-text p span {
@@ -109,15 +113,21 @@
     font-weight: 400;
 }
 .hero-text button{
-    margin-top: 40px;
+    width: fit-content;
 }
 .hero-apps{
-    margin-top: 40px;
     display: flex;
     gap: 10px;
 }
 .hero-apps img{
     width: 150px;
+}
+.hero-apps img:hover{
+    border: 3px solid #1565C0;
+    border-radius: 12px;
+}
+.hero-img{
+    position: relative;
 }
 .hero-fade{
     width: 500px;
@@ -137,14 +147,14 @@
 
 .who{
     width: 100%;
-    background-color: #fff;
+    position: relative;
+    background-color: #1E88E5;
     padding: 75px 125px;
 }
 
 .who-container{
-    width: 100%;
+    /* width: 100%; */
     height: fit-content;
-    
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -317,7 +327,7 @@
     color: #1971C2;
     border-radius: 10px;
 }
-label::after{
+.accordion li label::after{
     content: "+";
     font-size: 24px;
     color: #676767;
