@@ -4,6 +4,7 @@ import logo from '../../../images/VitalsLogoBlue.svg'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import { Link } from 'react-router-dom';
+import HospitalLoginForm from './HospitalLoginForm';
 
 export default function Rightside() {
   return (
@@ -15,7 +16,10 @@ export default function Rightside() {
 
                 <h4>Login as a Hospital</h4>
 
-                <form className='login-form'>
+
+                <HospitalLoginForm />
+
+                {/* <form className='login-form'>
                     <div className='right-input'>
                         <p>Email address</p>
                         <div className='rightside-input'><input type="email" placeholder='e.g name@example.com' /> <EmailOutlinedIcon/></div>
@@ -36,7 +40,7 @@ export default function Rightside() {
 
                     <button>LOGIN</button>
                     
-                </form>
+                </form> */}
 
                 <Link to={'/register'}><p>Don't have an account? <span>Register</span></p></Link>
 

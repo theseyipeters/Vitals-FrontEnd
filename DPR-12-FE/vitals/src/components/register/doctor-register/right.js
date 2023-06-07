@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../../images/VitalsLogoBlue.svg'
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+import DoctorRegForm from './DoctorRegForm';
 
 
 export default function Right() {
@@ -25,7 +26,10 @@ export default function Right() {
             </div>
 
             <div className='right-form'>
-                <form>
+
+
+                <DoctorRegForm />
+                {/* <form>
                     <div className='form-inputs'>
                         <div className='name-inputs'>
                             <div className='rightform-inputs'>
@@ -69,7 +73,7 @@ export default function Right() {
                     <div className='form-submit'>
                         <button type='submit' onClick={handleFormSubmit}>CREATE ACCOUNT</button>
                     </div>
-                </form>
+                </form> */}
 
             </div>
 

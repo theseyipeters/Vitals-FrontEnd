@@ -14,7 +14,7 @@ export default function Body() {
                 <p>Introducing our cutting-edge EMR software: Empower your healthcare practice with seamless digital efficiency. </p>
             </div>
             <div className='body-box-container'>
-              <Link className='body-link'><div className='body-box'>
+              <Link to={'/hospital-login'} className='body-link'><div className='body-box'>
                   <img src={hospital} alt='' />
                   <p>Login as a Hospital</p>
               </div></Link>
