@@ -1,8 +1,8 @@
-import React, { useState, useHistory, useEffect } from 'react';
+import React, { useState } from 'react';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import '../../login/patient-login/patientlogin.css'
-import { History, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -50,7 +50,6 @@ const HospitalLoginForm = () => {
         console.log("Success");
         setMessage('Login Successful')
         localStorage.setItem("user-info", JSON.stringify(data));
-        let token = localStorage.getItem("user-info");
         navigate("/hospitaldashboard")
 
       } else {

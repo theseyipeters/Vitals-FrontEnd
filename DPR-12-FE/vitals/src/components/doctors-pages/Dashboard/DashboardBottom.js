@@ -6,9 +6,7 @@ export default function DashboardBottom() {
   return (
     <div className='dash-container'>
       
-      <div className='table-container'>
-            <Table className='dash-table' />
-      </div>
+     <Table />
     </div>
   )
 }

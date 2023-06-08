@@ -1,8 +1,6 @@
 import React from 'react'
 import './hospitallogin.css'
 import logo from '../../../images/VitalsLogoBlue.svg'
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import { Link } from 'react-router-dom';
 import HospitalLoginForm from './HospitalLoginForm';
 

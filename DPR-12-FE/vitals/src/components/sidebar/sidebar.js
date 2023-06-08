@@ -12,7 +12,7 @@ export default function Sidebar() {
 
     const navigate = useNavigate();
 
-    let token= localStorage.getItem('user-info')
+   
 
     function Logout(){
         localStorage.removeItem('user-info');

@@ -1,18 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../../images/VitalsLogoBlue.svg'
-import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
+// import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import DoctorRegForm from './DoctorRegForm';
 
 
 export default function Right() {
-
-    const handleFormSubmit=(event) => {
-        event.preventDefault();
-    }
-
-
-
 
 
 

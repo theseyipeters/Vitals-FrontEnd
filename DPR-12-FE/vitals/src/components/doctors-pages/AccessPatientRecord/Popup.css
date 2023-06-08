@@ -77,3 +77,25 @@
     align-items: center;
     gap: 20px;
 }
+
+.wallet-input{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.wallet-input input{
+    width: 500px;
+}
+
+.wallet-input input::placeholder{
+    font-size: 14px;
+}
+.wallet-input input:focus{
+    outline: none;
+}
+.metamask{
+    width: 80px;
+}

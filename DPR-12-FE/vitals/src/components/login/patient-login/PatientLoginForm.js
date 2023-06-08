@@ -1,8 +1,8 @@
-import React, { useState, useHistory, useEffect } from 'react';
+import React, { useState } from 'react';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import './patientlogin.css'
-import { History, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 

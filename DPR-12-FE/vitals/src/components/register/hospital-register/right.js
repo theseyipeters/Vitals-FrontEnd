@@ -2,15 +2,12 @@ import React from 'react'
 import './hospitalregister.css'
 import { Link } from 'react-router-dom'
 import logo from '../../../images/VitalsLogoBlue.svg'
-import VisibilityOffOutlinedIcon from '@mui/icons-material/VisibilityOffOutlined';
 import HospitalRegForm from './HospitalRegForm';
 
 
 export default function Right() {
 
-    const handleFormSubmit=(event) => {
-        event.preventDefault();
-    }
+    
 
 
 

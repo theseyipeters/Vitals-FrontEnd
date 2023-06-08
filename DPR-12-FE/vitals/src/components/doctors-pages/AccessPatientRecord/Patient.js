@@ -3,7 +3,19 @@ import Popup from './Popup'
 import './Popup.css'
 
 export default function Patient(props) {
+  
+  const handleCancel = () => {
+    console.log('Cancel button clicked');
+    // Perform cancel logic here
+  };
 
+  const handleRequestAccess = (walletAddress) => {
+    console.log('Request Access button clicked');
+    console.log('Wallet Address:', walletAddress);
+    // Perform request access logic here
+  };
+
+  
   const [buttonPopup, setButtonPopup] = useState(false)
 
   return (
@@ -26,11 +38,11 @@ export default function Patient(props) {
       </div>
     </div>
 
-    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+    <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
       <p className='popup-text'>{props.name} has to give you permission to view and edit their medical records</p>
     </Popup>
 
-    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+    <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
       <p className='popup-text'>{props.name} has to give you permission to view and edit their medical records</p>
     </Popup>
 

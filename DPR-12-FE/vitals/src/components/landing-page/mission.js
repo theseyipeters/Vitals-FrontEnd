@@ -14,7 +14,7 @@ export default function Mission() {
             </div>
             <div className='mission-cta'>
                     <button className='nav-btn'>LEARN MORE</button>
-                    <Link><img src={demo} alt='' /></Link>
+                    <Link to={'https://youtube.com'}><img className='demo' src={demo} alt='' /></Link>
             </div>
         </div>
     </div>
