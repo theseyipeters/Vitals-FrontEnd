@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background: #fafafa;
+    border: 10px solid #fafafa;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .body {
+    margin: 50px 150px;;
+  }
+  
+  .heading {
+    font-size: 25px;
+  }
+  
+  .heading h3 {
+    font-weight: 500;
+  }
+  
+  .subheading {
+    color: #6B7280;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .subheading h4 {
+    font-weight: 500;
+  }
+  
+  .sign {
+    margin-top: 40px;
+  }
+  
+  .signs {
+    margin-top: 20px;
+  }
+  
+  .input1 {
+    margin-top: 15px;
+  }
+  
+  .input {
+    margin-top: 15px;
+  }
+  
+  
+  .sign > .input1 > textarea {
+    height: 200px;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid;
+    vertical-align: top;
+    padding: 15px;
+    font-size: 17px;
+  
+    
+  }
+  
+  .signs > .input > textarea {
+    height: 200px;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid;
+    padding: 15px;
+    font-size: 17px;
+  }
+  
+  .vitals {
+    margin-top: 20px;
+    width: 83%;
+  }
+  
+  .vinputs {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  
+  .input-bar textarea {
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 240px;;
+  }
+  
+  .btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    width: 83%;
+  }
+  
+  
+  .btns input {
+    display: flex;
+    width: 105px;
+    height: 35px;
+    background: #1976D2;
+    border: solid 1px#1976D2;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .btn {
+    margin-right: 20px;
+  }
