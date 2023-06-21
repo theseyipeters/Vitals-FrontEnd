@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .body {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;  
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .right {
+    font-size: 20px;
+  }
+  
+  .personal {
+    margin-top: 30px;
+  }
+  
+  .headings {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lt {
+    margin-right: 40px;
+    border-bottom: solid 3px #2196f3;
+    padding-bottom: 7px;
+  }
+  
+  .form {
+    margin-top: 25px;
+  }
+  
+  .content1 {
+    margin-top: 20px;
+  }
+  
+  .content2 {
+    margin-top: 20px;
+  }
+  
+  .input {
+   margin-top: 5px; 
+  }
+  
+  .input input {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+    background: #ebecf0;
+    border: solid 1px #777777; 
+  }
+  
+  
+  .last-content {
+    display: flex;
+    width: 97%;
+  }
+  
+  .last-content .content1 {
+    width: 50%;
+  }
+  
+  .last-content .content2 {
+    width: 50%;
+  }
+  
+  .last-content .content1 .input input {
+    width: 98%;
+  }
+  
+  .last-content .content2 .input input {
+    width: 98%;
+    margin-left: 15px;
+  }
+  
+  .last-content .content2 .title {
+    margin-left: 15px;
+  
+  }
+  /*second row of input*/
+  .last-content1 {
+    display: flex;
+    width: 97%;
+  }
+  
+  .last-content1 .content1 {
+    width: 50%;
+  }
+  
+  .last-content1 .content2 {
+    width: 50%;
+  }
+  
+  .last-content1 .content1 .input input {
+    width: 98%;
+  }
+  
+  .last-content1 .content2 .input input {
+    width: 98%;
+    margin-left: 15px;
+  }
+  
+  .last-content1 .content2 .title {
+    margin-left: 15px;
+  
+  }
+  
+  .allergies {
+    margin-top: 30px;
+    width: 97%;
+  }
+  
+  .title-text {
+    font-size: 20px;
+  }
+  
+  .sections {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between
+  }
+  
+  .section {
+    width: 30%;
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .scontents {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .inner-section {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border-radius: 15px;
+    background: #E3F2FD;
+    color: #1976D2;
+  
+  }
+  
+  .inner-section1 {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    height: 25px;
+    border-radius: 15px;
+    background: #E3F2FD;
+    color: #1976D2;
+  
+  }
+  
+  .inner-section2 {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border-radius: 15px;
+    background: #E3F2FD;
+    padding-right: 10px;
+    color: #1976D2;
+  
+  }
+  
+  .drug {
+    margin-left: 10px;
+  }
+  
+  .cancel {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  
+  .sub-txt {
+    margin-top: 20px;
+    color: #1565C0;
+    font-family: Roboto;
+  }
+  
+  .sub-txt h5 {
+    font-weight: 500;
+  }
+  
+  /*Block Designs for the Table*/
+  .block {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    border-radius: 5px;
+    background: white;
+    margin-top: 50px;
+    width: 97%;
+  }
+  
+  .top {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*justify-content: space-between;*/
+    padding-top: 20px;
+  }
+  
+  .lt1 {
+    color: #1565C0;
+    margin-left: 950px;
+  }
+  
+  table {
+    width: 100%;
+    /*border: solid black 1px;*/
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th {
+    border-bottom: 1px solid #EAECF0;
+    text-align: left;
+    /*padding-left: 20px;*/
+    height: 30px; 
+    color: #667085;
+    background: #F9FAFB;
+  }
+  
+  .header {
+    padding-left: 20px;
+    width: 5%;
+  }
+  
+  .header2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .med {
+    margin-left: 5px;
+  }
+  
+  
+  .pimage {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .pname {
+    margin-left: 8px;
+    font-weight: 600;
+  }
+  
+  .specialty {
+    font-weight: 600;
+  }
+  
+  .pdate {
+    color:#9E9E9E;
+  }
+  
+  td {
+    border-bottom: 1px solid #EAECF0;
+    height: 50px;
+  }
+  
+  .check2 {
+    margin-left: 20px;
+  }
+  
